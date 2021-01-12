@@ -1,0 +1,36 @@
+1. What is the Big O for this?
+
+1) O(1) Constant Time Complexity: Because you do not need to check individually with each person and instead stand up and yell out for whoever has a specific dog type to step forward, you will get an answer immediately without having to loop through every person checking individually.
+2) O(n) Linear Time Complexity: Because you you need to check with each person individually until someone has a golden that wants to play. We take the average number of inputs and for each person we ask, we carry out the same number of steps.
+  
+2. Even or Odd:
+
+O(1) Constant Time Complexity: We pass in a single value and perform one operation every time to determine whether or not the value passed in is even.
+
+3. Are you here?
+
+O(n^2) Polynomial Time Complexity: We pass in two arrays and need to determine whether or not any characters in the first array are in the second array. So, we loop through the first array and then have a nested loop in the second array to check each value against. Because there are 2 levels of looping, we have a polynomial time O(n^k).
+  
+4. Doubler:
+
+O(n) Linear Time Complexity: We have a single array that is passed in and we loop through it once and double the value of each number in the array. Whether we pass in 1 or 100 elements in the array, the number of operations required will grow linearly.
+
+5. Naive search:
+
+O(n) Linear Time Complexity: Need to remember the average input size here. We are still just looping through an array and determining whether or not an item argument passed in is contained in the array. If it is, we return the index in the array of where it is. We will still, on avearge, need to loop through the array n/2 number of times where n is the length of the array. So it will take a linear number of operations to complete the task relative to the input size.
+
+6. Creating pairs:
+
+O(n^2) Polynomial Time Complexity: We pass in two arrays and need to join all the elements in each of them. So, we will need a nested loop to produce all of the pairs. Because there are two levels of looping, we have a polynomial time O(n^k).
+
+7. Compute the sequence:
+
+This algorithm takes in a number and creates an array of elements using a for loop. There are always going to be the same number of operations per loop, so we say that the relationship is linear
+
+O(n) Linear Time Complexity
+
+8. An efficient search:
+
+O(log(n)) Logarithmic Time Complexity. Key charactertistic of this algorithm is that we cut the problem size in half each round. After each iterative search, the number of items we need to search through is halved. So, with huge datasets, we can more efficiently find the index of the item in the array.
+
+
